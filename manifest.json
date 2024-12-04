@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker Extension",
+    "version": "1.0",
+    "description": "Automatically clicks buttons and navigates the page.",
+    "permissions": ["scripting", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://poll.fm/14724268","https://poll.fm/14724268/results?msg=voted", "https://poll.fm/14724268/results?msg=revoted"], 
+        "js": ["content.js"]
+      }
+    ]
+  }
