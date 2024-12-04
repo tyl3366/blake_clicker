@@ -1,7 +1,7 @@
 (function autoProcessPages() {
     const buttonSelector1 = '#PDI_answer65386963'; // Replace with the selector for the first button
     const buttonSelector2 = '#pd-vote-button14724268'; // Replace with the selector for the second button
-    const delayBetweenClicks = 200; // Time before clicking the second button
+    const delayBetweenClicks = 300; // Time before clicking the second button
     const delayBeforeGoBack = 400; // Time before going back from the second page
     const delayOnThirdPage = 60000; // Wait 1 minute on the third page (60000ms)
 
